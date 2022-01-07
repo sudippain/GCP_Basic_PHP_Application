@@ -1,0 +1,13 @@
+--- 
+handlers: 
+  - 
+    static_dir: stylesheets
+    url: /stylesheets
+  - 
+    static_files: \1
+    upload: .+\.(gif|png|jpg)$
+    url: /(.+\.(gif|png|jpg))$
+  - 
+    script: auto
+    url: .*
+runtime: php74
